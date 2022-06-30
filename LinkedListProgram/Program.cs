@@ -12,14 +12,13 @@ namespace LinkedListProgram
         {
             Console.WriteLine("Creating Linked lIst of 56, 30 and 70");
             Program program = new Program();
-            Console.WriteLine("Creating  Linked list by adding Data in the First Position ");
+            Console.WriteLine("Creating linked list by adding Data in the First Position ");
             program.AddFirst(56);
             program.AddFirst(30);
             program.AddFirst(70);
             program.DiplayData();
 
         }
-
         public class Node
         {
             public int data;
@@ -49,7 +48,7 @@ namespace LinkedListProgram
         {
             if (head == null)
             {
-                Console.WriteLine("Linkedlist is Empty");
+                Console.WriteLine("Linkedlist data is Empty");
             }
             Node temp = head;
             while (temp != null)
