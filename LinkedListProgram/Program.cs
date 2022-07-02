@@ -18,9 +18,22 @@ namespace LinkedListProgram
 
             // Insert the 40 after 30 (at index=2)  in the linked list
             program.Insert(2, 40);
+            // Delete the 40 from the linked list
+            program.Delete(2);
             program.DiplayData();
 
             /*
+            Program program = new Program();
+
+            program.AddLast(56);
+            program.AddLast(30);
+            program.AddLast(70);
+
+            // Insert the 40 after 30 (at index=2)  in the linked list
+            program.Insert(2, 40);
+            program.DiplayData();
+
+
            Program program = new Program();
 
            program.AddLast(56);
