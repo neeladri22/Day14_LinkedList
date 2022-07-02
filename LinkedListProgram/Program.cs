@@ -16,66 +16,77 @@ namespace LinkedListProgram
             program.AddLast(30);
             program.AddLast(70);
 
+            // Insert the 40 after 30 (at index=2)  in the linked list
+            program.Insert(2, 40);
             program.DiplayData();
-
-            var isPresent = program.Search(30);
-            Console.WriteLine("\n");
-            Console.WriteLine("Element 30 is Present in the Linked list :" + isPresent);
 
             /*
-            Program program = new Program();
-            //Creating  Linked list by adding Data in the last Position
-
-            program.AddLast(56);
-            program.AddLast(30);
-            program.AddLast(70);
-
-            program.Pop();
-            program.DiplayData();
-
-
-            
-            // delete the first  element in the LinkedList
-            Program program = new Program();
-
-            program.AddFirst(70);
-            program.AddFirst(30);
-            program.AddFirst(56);
-
-            program.Delete(0);
-            program.DiplayData();
-
-            Program p = new Program();
-            p.AddLast(56);
-            p.AddLast(70);
-
-            // insert the 30 in 1st Index (between 56 and 70)
-            p.Insert(1, 30);
-            p.DiplayData();
-            
-            Program program = new Program();
-            Console.WriteLine("Creating  Linked list by adding Data in the Last Position ");
-            program.AddLast(56);
-            program.AddLast(30);
-            program.AddLast(70);
-            program.DiplayData();
-            
            Program program = new Program();
-           Console.WriteLine("Creating  Linked list by adding Data in the First Position ");
+
+           program.AddLast(56);
+           program.AddLast(30);
+           program.AddLast(70);
+
+           program.DiplayData();
+
+           var isPresent = program.Search(30);
+           Console.WriteLine("\n");
+           Console.WriteLine("Element 30 is Present in the Linked list :" + isPresent);
+
+
+           Program program = new Program();
+           //Creating  Linked list by adding Data in the last Position
+
+           program.AddLast(56);
+           program.AddLast(30);
+           program.AddLast(70);
+
+           program.Pop();
+           program.DiplayData();
+
+
+
+           // delete the first  element in the LinkedList
+           Program program = new Program();
+
            program.AddFirst(70);
            program.AddFirst(30);
            program.AddFirst(56);
+
+           program.Delete(0);
            program.DiplayData();
 
-           
-           Console.WriteLine("Creating Linked lIst of 56, 30 and 70");
+           Program p = new Program();
+           p.AddLast(56);
+           p.AddLast(70);
+
+           // insert the 30 in 1st Index (between 56 and 70)
+           p.Insert(1, 30);
+           p.DiplayData();
+
            Program program = new Program();
-           Console.WriteLine("Creating linked list by adding Data in the First Position ");
-           program.AddFirst(56);
-           program.AddFirst(30);
-           program.AddFirst(70);
+           Console.WriteLine("Creating  Linked list by adding Data in the Last Position ");
+           program.AddLast(56);
+           program.AddLast(30);
+           program.AddLast(70);
            program.DiplayData();
-           */
+
+          Program program = new Program();
+          Console.WriteLine("Creating  Linked list by adding Data in the First Position ");
+          program.AddFirst(70);
+          program.AddFirst(30);
+          program.AddFirst(56);
+          program.DiplayData();
+
+
+          Console.WriteLine("Creating Linked lIst of 56, 30 and 70");
+          Program program = new Program();
+          Console.WriteLine("Creating linked list by adding Data in the First Position ");
+          program.AddFirst(56);
+          program.AddFirst(30);
+          program.AddFirst(70);
+          program.DiplayData();
+          */
         }
         // Creating Node
         public class Node
