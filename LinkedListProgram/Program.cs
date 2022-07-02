@@ -10,6 +10,15 @@ namespace LinkedListProgram
     {
         static void Main(string[] args)
         {
+
+            Program program = new Program();
+            Console.WriteLine("Creating  Linked list by adding Data in the First Position ");
+            program.AddFirst(70);
+            program.AddFirst(30);
+            program.AddFirst(56);
+            program.DiplayData();
+
+            /*
             Console.WriteLine("Creating Linked lIst of 56, 30 and 70");
             Program program = new Program();
             Console.WriteLine("Creating linked list by adding Data in the First Position ");
@@ -17,7 +26,7 @@ namespace LinkedListProgram
             program.AddFirst(30);
             program.AddFirst(70);
             program.DiplayData();
-
+            */
         }
         public class Node
         {
