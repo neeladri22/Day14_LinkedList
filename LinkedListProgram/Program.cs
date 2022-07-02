@@ -10,6 +10,18 @@ namespace LinkedListProgram
     {
         static void Main(string[] args)
         {
+            Program program = new Program();
+            //Creating  Linked list by adding Data in the last Position
+
+            program.AddLast(56);
+            program.AddLast(30);
+            program.AddLast(70);
+
+            program.Pop();
+            program.DiplayData();
+
+
+            /*
             // delete the first  element in the LinkedList
             Program program = new Program();
 
@@ -20,7 +32,6 @@ namespace LinkedListProgram
             program.Delete(0);
             program.DiplayData();
 
-            /*
             Program p = new Program();
             p.AddLast(56);
             p.AddLast(70);
@@ -64,10 +75,7 @@ namespace LinkedListProgram
                 this.data = data;
             }
         }
-
-
         public Node head;
-
         // Creting Method to Add data in First position in the Linked list
         public bool AddFirst(int data)
         {
@@ -163,20 +171,6 @@ namespace LinkedListProgram
             Y.next = null;
             return Z;
         }
-        // Creating method to Delete the elment from the Linked List
-        public void Delete(int index)
-        {
-            if (index == 0)
-            {
-                head = head.next;
-                return;
-            }
-            Node Temp = head;
-            for (int i = 0; i < index - 1; i++)
-            {
-                Temp = Temp.next;
-            }
-            Temp.next = Temp.next.next;
-        }
+
     }
 }
