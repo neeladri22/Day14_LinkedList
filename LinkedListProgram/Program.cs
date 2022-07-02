@@ -10,24 +10,31 @@ namespace LinkedListProgram
     {
         static void Main(string[] args)
         {
-
             Program program = new Program();
-            Console.WriteLine("Creating  Linked list by adding Data in the First Position ");
-            program.AddFirst(70);
-            program.AddFirst(30);
-            program.AddFirst(56);
+            Console.WriteLine("Creating  Linked list by adding Data in the Last Position ");
+            program.AddLast(56);
+            program.AddLast(30);
+            program.AddLast(70);
             program.DiplayData();
-
             /*
-            Console.WriteLine("Creating Linked lIst of 56, 30 and 70");
-            Program program = new Program();
-            Console.WriteLine("Creating linked list by adding Data in the First Position ");
-            program.AddFirst(56);
-            program.AddFirst(30);
-            program.AddFirst(70);
-            program.DiplayData();
-            */
+           Program program = new Program();
+           Console.WriteLine("Creating  Linked list by adding Data in the First Position ");
+           program.AddFirst(70);
+           program.AddFirst(30);
+           program.AddFirst(56);
+           program.DiplayData();
+
+           
+           Console.WriteLine("Creating Linked lIst of 56, 30 and 70");
+           Program program = new Program();
+           Console.WriteLine("Creating linked list by adding Data in the First Position ");
+           program.AddFirst(56);
+           program.AddFirst(30);
+           program.AddFirst(70);
+           program.DiplayData();
+           */
         }
+        // Creating Node
         public class Node
         {
             public int data;
@@ -39,8 +46,10 @@ namespace LinkedListProgram
             }
         }
 
+
         public Node head;
 
+        // Creting Method to Add data in First position in the Linked list
         public bool AddFirst(int data)
         {
             Node node = new Node(data);
@@ -53,11 +62,13 @@ namespace LinkedListProgram
             head = node;
             return true;
         }
+
+        // Creating Method to Display the data in Linked lIst
         public void DiplayData()
         {
             if (head == null)
             {
-                Console.WriteLine("Linkedlist data is Empty");
+                Console.WriteLine("Linkedlist is Empty");
             }
             Node temp = head;
             while (temp != null)
@@ -66,6 +77,7 @@ namespace LinkedListProgram
                 temp = temp.next;
             }
         }
+        // Creating method to add data in Last postion in the Linked list
         public bool AddLast(int data)
         {
             Node node = new Node(data);
