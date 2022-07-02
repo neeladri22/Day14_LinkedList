@@ -10,6 +10,17 @@ namespace LinkedListProgram
     {
         static void Main(string[] args)
         {
+            // delete the first  element in the LinkedList
+            Program program = new Program();
+
+            program.AddFirst(70);
+            program.AddFirst(30);
+            program.AddFirst(56);
+
+            program.Delete(0);
+            program.DiplayData();
+
+            /*
             Program p = new Program();
             p.AddLast(56);
             p.AddLast(70);
@@ -17,7 +28,7 @@ namespace LinkedListProgram
             // insert the 30 in 1st Index (between 56 and 70)
             p.Insert(1, 30);
             p.DiplayData();
-            /*
+            
             Program program = new Program();
             Console.WriteLine("Creating  Linked list by adding Data in the Last Position ");
             program.AddLast(56);
@@ -131,6 +142,41 @@ namespace LinkedListProgram
                 Console.WriteLine("Index is not in range");
                 return false;
             }
+
+        }
+
+        // creating method to remove the latest element from the Linked list
+        public int Pop()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is Empty");
+
+            }
+            Node X = head, Y = head;
+            while (X.next != null)
+            {
+                Y = X;
+                X = X.next;
+            }
+            int Z = X.data;
+            Y.next = null;
+            return Z;
+        }
+        // Creating method to Delete the elment from the Linked List
+        public void Delete(int index)
+        {
+            if (index == 0)
+            {
+                head = head.next;
+                return;
+            }
+            Node Temp = head;
+            for (int i = 0; i < index - 1; i++)
+            {
+                Temp = Temp.next;
+            }
+            Temp.next = Temp.next.next;
         }
     }
 }
